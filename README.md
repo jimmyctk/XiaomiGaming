@@ -1,4 +1,4 @@
-# EFI Folder for the Xiaomi Gaming 7th Generation (KabyLake)
+# EFI for Xiaomi Gaming 7th Generation (KabyLake)
 
 ## Disclaimer!
 This is a fork from [johnnync13](https://github.com/johnnync13/)https://github.com/johnnync13/XiaomiGaming and I am just porting for the Xiaomi Gaming Book 7th gen with KabyLake. I do not own any copyright.
@@ -19,14 +19,16 @@ Use these files and this howto at your own risk. I'm not responsible in any way 
 | Working | Not working |
 | ------------- | ------------- |
 | [Wifi Intel]() (buggy, try restart or clear nvram) | * Nvidia GPU (Disabled since 1050Ti was under Optimus)  |
-| [Wifi Intel Gui](https://github.com/1hbb/OpenIntelWireless-Factory/releases) | Bluetooth Intel |
-| Intel Graphics HD 630 | Card Reader |
-| FN brightness adjustment (SSDT-FN.aml Fix By [shomerchang](https://github.com/shomerchang)) | Brightness keys|
+| [Wifi Intel Gui](https://github.com/1hbb/OpenIntelWireless-Factory/releases) | Card Reader |
+| Intel Graphics HD 630 | Battery Management |
+| FN brightness adjustment (SSDT-FN.aml Fix By [shomerchang](https://github.com/shomerchang)) | Trackpad (gestures) |
 | USB 3.0 | Sleep/Wake |
-| Audio, ALC1220 (Using AppleALC) | Native CPU Power Management |
-| Built-in camera | Battery Management |
-| Built-in mic | Trackpad (gestures) |
-| NVMe / SATA SSD's | HDMI Video and Audio |
+| Audio, ALC1220 (Using AppleALC) | HDMI Video and Audio |
+| Built-in camera |  |
+| Built-in mic | |
+| NVMe / SATA SSD's |  |
+| Native CPU Power Management |
+| Bluetooth Intel (hvnt test for Handsoff/Airdrop/etc) |
 
 ***
 
@@ -72,17 +74,9 @@ sudo diskutil mount /dev/disk0s1
 * Remove the USB stick from the laptop
 * Done! Reboot to enable all the kexts. Enjoy your Hackintosh!
 
-## macOS is working! Next steps:
-### (optional) Fixing iMessage, FaceTime etc.
-[An iDiot's Guide To iMessage (clover)](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)<br />
-[Fixing iServices (OpenCore)](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/extras/iservices)
-
-***
-
-## BIOS Modification
-* [johnnync13](https://github.com/johnnync13/) suggested we should modify the BIOS, will try later. It is really important on OpenCore, that the laptop have unlocked CFG Lock. It is important to CPU, sleep/wake and better behavior like native macOS. It is very easy on the most laptops because the BIOS has option in menu, but not on Xiaomi BIOS.
-
-If you want to know more about it, please go to the his original repo https://github.com/johnnync13/XiaomiGaming
+## Optional
+[Fixing iServices](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/extras/iservices)
+[BIOS Modification](https://github.com/johnnync13/XiaomiGaming)
 
 ***
 
