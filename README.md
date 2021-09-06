@@ -1,7 +1,7 @@
-# EFI for Xiaomi Gaming 7th Generation (KabyLake)
+# Hackintosh EFI for Xiaomi Gaming 7th Generation (KabyLake)
 
 ## Disclaimer!
-This is a fork from [johnnync13](https://github.com/johnnync13/)https://github.com/johnnync13/XiaomiGaming and I am just porting for the Xiaomi Gaming Book 7th gen with KabyLake. I do not own any copyright.
+This is a fork from [johnnync13] (https://github.com/johnnync13/)https://github.com/johnnync13/XiaomiGaming and I am just porting for the Xiaomi Gaming Book 7th gen with KabyLake. I do not own any copyright.
 Use these files and this howto at your own risk. I'm not responsible in any way for lost data, damage to software or hardware or anything else that might go wrong. This works for me but might not for you.
 
 ### MacOS Versions tested:
